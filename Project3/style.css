@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -11,7 +12,7 @@ html, body {
     background-color: #f5f5f5;
 }
 
-/* ---------------- Navigation ---------------- */
+/* Navigation Bar */
 #nav {
     height: 12vh;
     width: 100%;
@@ -32,7 +33,7 @@ html, body {
     width: 100%;
 }
 
-/* ---------------- Left Section ---------------- */
+/* Left Section */
 #left_section {
     display: flex;
     align-items: center;
@@ -56,10 +57,10 @@ html, body {
 }
 
 .text:hover {
-    color: #007bff;
+    color: #0176D3;
 }
 
-/* ---------------- Right Section ---------------- */
+/* Right Section */
 #right_section {
     display: flex;
     align-items: center;
@@ -76,7 +77,7 @@ html, body {
 }
 
 .right_icons:hover {
-    color: #007bff;
+    color: #0176D3;
 }
 
 #icons {
@@ -96,7 +97,7 @@ html, body {
 }
 
 #icons div:hover {
-    background-color: #007bff;
+    background-color: #0176D3;
     color: white;
 }
 
@@ -111,61 +112,137 @@ html, body {
 }
 
 #icons2:hover {
-    background-color: #007bff;
+    background-color: #0176D3;
     color: white;
 }
 
 #try_button {
     padding: 12px 25px;
     font-weight: bold;
-    background-color: #60a570;
+    background-color: #0176D3;
     color: white;
     border-radius: 25px;
     transition: background-color 0.3s ease-in-out;
 }
 
 #try_button:hover {
-    background-color: #218838;
+    background-color: #032D60;
 }
 
-/* ---------------- Page Sections ---------------- */
+/* Label Section */
+#lable {
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    background-color: #2A2F92;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 25px;
+    padding: 10px 20px;
+}
+
+.lable_content1 img {
+    height: 35px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.lable_content2 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.lable_content3 {
+    background-color: white;
+    color: #0176D3;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.lable_content3:hover {
+    background-color: #2A2F92;
+    color: white;
+}
+
+/* Page 1 Sections */
 #page1 {
-    height: 85vh;
+    height: 83vh;
     width: 100%;
-    background-color: #f86c6b;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-#page2 {
-    height: 85vh;
-    width: 100%;
-    background-color: #8e44ad;
+#p1s1 {
+    height: 80%;
+    width: 40%;
+    margin-top: 80px;
 }
 
-/* ---------------- Responsive Design ---------------- */
-@media (max-width: 1024px) {
-    #nav {
-        padding: 0 3%;
-    }
-    #page_link {
-        gap: 15px;
-    }
-    #right_section {
-        gap: 15px;
-    }
+#p1s2 {
+    height: 80%;
+    width: 40%;
+    background-color: rgb(212, 212, 212);
+    border-radius: 10px;
 }
 
-@media (max-width: 768px) {
-    #nav {
-        flex-direction: column;
-        height: auto;
-        padding: 15px 0;
-    }
-    #left_section {
-        flex-direction: column;
-        gap: 10px;
-    }
-    #right_section {
-        flex-direction: column;
-        gap: 10px;
-    }
+#p1s1c1 {
+    padding: 20px;
+    margin: 20px;
+}
+
+#p1s1c1 h1 {
+    font-weight: 700;
+    font-size: 60px;
+    color: #032D60;
+}
+
+#p1s1c2 {
+    padding: 20px;
+    margin: 20px;
+}
+
+#p1s1c2 p {
+    font-weight: 100;
+    font-size: 27px;
+}
+
+#p1s1c3 {
+    display: flex;
+}
+
+#btn1, #btn2 {
+    height: 60px;
+    width: 35%;
+    margin: 20px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+#btn1 {
+    background-color: #0176D3;
+    color: white;
+}
+
+#btn2 {
+    border: 3px solid #0176D3;
+    color: #0176D3;
+}
+
+#btn1:hover {
+    background-color: #032D60;
+}
+
+#btn2:hover {
+    border-color: #032D60;
+    color: #032D60;
 }
